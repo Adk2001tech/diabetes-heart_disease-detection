@@ -1,0 +1,187 @@
+{% extends "Base.html" %}
+{% block content %}
+
+<br>
+<body class="dabetes" style="background-image:url('static/tx2.jpg'); background-size: cover; max-width:100%; max-height:80%%; " >
+
+
+
+<div class="container" style="background-image:url('static/DD3.jpg'); background-size: cover; height:100%; " >
+  <h1 style="color:#19334d; font-family:courier;" ><u><strong>Diabetes Tests & Diagnosis</strong></u></h1>
+
+  {% if form_not_filled %}
+
+  <div class="row">
+  <div class="col">
+    </div></div>
+  <div class="col">
+    <img src="static/DD1.gif" alt="gif" width="20%" height="20%">
+    </div>
+
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+    Form Parameter
+    </button>
+    <p><small>Hit here to know about this <strong>FORM</strong>.</small></p>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLongTitle">About form</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <strong>Pregnancies</strong>:Number of times pregnant <br>
+      <strong>Glucose</strong>:Plasma glucose concentration a 2 hours in an oral glucose tolerance test <br>
+      <strong>BloodPressure</strong>:Diastolic blood pressure (mm Hg) <br>
+      <strong>SkinThickness</strong>:Triceps skin fold thickness (mm) <br>
+      <strong>Insulin</strong>:2-Hour serum insulin (mu U/ml) <br>
+      <strong>BMI</strong>:Body mass index (weight in kg/(height in m)^2) <br>
+      <strong>Diabetes pedigree</strong>:Diabetes pedigree function provides some data on diabetes mellitus history in relatives and the genetic relationship of those relatives to the patient. <br>
+      <strong>Age</strong>:The person's age in years <br>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  <hr>
+   <form  method="POST">
+      <h3 style="color:black; font-family:courier,arial,helvetica;">Fill Up form to check your <strong>HEALTH</strong> status</h3>
+    <div class="row">
+    <div class="col">
+     <div class="form-group">
+        <label for="Pregnancies" style="color:black">Pregnancies</label>
+        <input type="number" class="form-control" id="Pregnancies" name="Pregnancies" placeholder="0-17" min="0" max="17" required>
+     </div></div>
+
+     <div class="col">
+     <div class="form-group">
+        <label for="Glucose" style="color:black">Glucose</label>
+        <input type="number" class="form-control" id="Glucose" name="Glucose" placeholder="0-199" min="0" max="199" required>
+     </div></div>
+     </div>
+
+
+     <div class="row">
+     <div class="col">
+     <div class="form-group">
+        <label for="BloodPressure" style="color:black">BloodPressure</label>
+        <input type="number" class="form-control" id="BloodPressure" name="BloodPressure" placeholder="0-122" min="0" max="122" required>
+     </div></div>
+
+     <div class="col">
+     <div class="form-group">
+        <label for="SkinThickness" style="color:black">SkinThickness</label>
+        <input type="number" class="form-control" id="SkinThickness" name="SkinThickness" placeholder="0-99" min="0" max="99" required>
+     </div></div>
+     </div>
+
+
+     <div class="form-group">
+        <label for="Insulin" style="color:black">Insulin</label>
+        <input type="number" class="form-control" id="Insulin" name="Insulin" placeholder="0-846" min="0" max="846" required>
+     </div>
+
+
+     <div class="row">
+     <div class="col">
+     <div class="form-group">
+        <label for="BMI" style="color:black">BMI</label>
+        <input type="number" class="form-control" id="BMI" name="BMI" placeholder="0.0-70.0" step="0.1" min="0" max="70" required>
+     </div></div>
+
+     <div class="col">
+     <div class="form-group">
+        <label for="Age" style="color:black">Age</label>
+        <input type="number" class="form-control" id="Age" name="Age" placeholder=">18" min="18"   required>
+     </div></div>
+
+     <div class="col">
+     <div class="form-group">
+        <label for="Diabetes_pedigree" style="color:black">Diabetes pedigree</label>
+        <input type="number" class="form-control" id="Diabetes_pedigree" name="Diabetes_pedigree" placeholder="0.00-3.00" step="0.01" min="0" max="3" required>
+     </div></div>
+     </div>
+     <br><br>
+    <input type="submit" class="btn btn-outline-success" name="Submit" value="Submit and Predict">
+
+   </form>
+<br><br>
+
+    {% else %}
+        {% if result%}
+        <br>
+            <h2 style="color:#B80515">... Sorry to say! You are <span class="badge badge-secondary">Diabetes patient</span>! ...</h2>
+            <hr>
+            <p>You can assure it by ...</p>
+            <h3>Test for diabetes at home</h3>
+            <p style="font-family:verdana">A home blood glucose test is a safe and affordable way for people to check for diabetes before it causes problems.
+               This is useful, as diabetes does not always cause symptoms, especially in the early stages.</p>
+             <p style="font-family:verdana">For people who already have a diagnosis of diabetes, a simple home blood glucose test is vital for enabling them to manage their blood sugar levels.<br>
+              A home blood glucose test could even be lifesaving by preventing the complications of consistently high blood sugar. The complications of diabetes
+               can include cardiovascular disease, kidney problems, and nerve damage.</p>
+              <br>
+            <img  src="static/DD4.jpg" alt="" width="30%">
+            <br>
+            <p style="font-family:verdana">Check this out for full details.....<br><a class="btn btn-primary" href="https://www.medicalnewstoday.com/articles/317224" role="button">Link</a> </p>
+            <br>
+
+        {% else %}
+        <br>
+            <h2 style="color:#0A8B05">..... Hey Buddy! You are <span class="badge badge-secondary">Diabetes free</span>! .....</h2>
+            <hr>
+            <div class="free">
+              <p>Make sure you know.......</p>
+              <h3>Symptoms of diabetes</h3>
+              <p style="font-family:verdana">Many people with diabetes have no signs of the disease at all. However, the lack of symptoms does not necessarily mean the absence of diabetes.</p>
+              <p style="font-family:verdana">When symptoms occur, many of the effects of type 1 and type 2 diabetes are the same since both affect blood sugar regulation in the body. Symptoms include:</p>
+
+              <ol>
+                <li><strong>Type 1</strong></li>
+                <ul>
+                  <li>Increased hunger and thirst</li>
+                  <li>Increased urination, particularly at night</li>
+                  <li>Unexplained weight loss</li>
+                  <li>Unexplainable tiredness</li>
+                  <li>Blurred vision</li>
+                  <li>Slow-healing sores, or wounds that appear to heal and then reopen</li>
+                  <li>High blood pressure</li>
+                </ul>
+              </ol>
+              <p style="font-family:verdana">Pregnant women who suddenly experience these symptoms should consider the possibility of diabetes.
+              The placenta releases hormones during pregnancy that can make it more difficult for the body to control blood sugar.
+               Without treatment, gestational diabetes can cause a range of pregnancy complications.</p>
+               <p style="font-family:verdana">Disease can lead to a host of complications. These includes:</p>
+               <ol>
+                 <li><strong>Type 2</strong></li>
+                 <ul>
+                   <li>Cardiovascular problems, such as stroke, heart attack, and blood clots</li>
+                   <li>Wounds, numbness, tingling</li>
+                   <li>Loss of feet or limbs</li>
+                   <li>Kidney failure</li>
+                   <li>Nerve damage</li>
+                   <li>Chronic headaches</li>
+                   <li>Vision and hearing loss</li>
+                 </ul>
+               </ol>
+               <br>
+
+            </div>
+        {% endif %}
+
+  {% endif %}
+
+</div>
+
+</body>
+
+{% endblock%}

@@ -1,0 +1,271 @@
+{% extends "Base.html" %}
+{% block content %}
+
+<br>
+<body class="dabetes" style="background-image:url('../static/wl1.jpg'); background-size: cover; max-width:100%; max-height:80%; " >
+
+
+<div class="container">
+
+<div class="container" style="background-image:url('../static/hr6.jpg'); background-size: cover;" >
+  <h1 style="color:#19334d; font-family:courier;" ><u><strong>Heart Tests & Diagnosis</strong></u></h1>
+
+  {% if form_not_filled %}
+
+  <div class="row">
+  <div class="col">
+    </div></div>
+  <div class="col">
+    <img src="../static/hr.gif" alt="gif" width="20%" height="20%">
+    </div>
+<br>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+    Form Parameter
+    </button>
+    <p><small>Hit here to know about this <strong>FORM</strong>.</small></p>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLongTitle">About form</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <strong>Age</strong>: The person's age in years <br>
+      <strong>Sex</strong>: The person's sex (1 = male, 0 = female)<br>
+      <strong>Chest pain</strong>: The chest pain experienced (Value 0: typical angina, Value 1: atypical angina, Value 2: non-anginal pain, Value 3: asymptomatic)<br>
+      <strong>Blood pressure</strong>: The person's resting blood pressure (mm Hg on admission to the hospital)<br>
+      <strong>Cholesterol</strong>: The person's cholesterol measurement in mg/dl <br>
+      <strong>Fbs</strong>: The person's fasting blood sugar (> 120 mg/dl, 1 = true; 0 = false)<br>
+      <strong>Resting</strong>: Resting electrocardiographic measurement (0 = normal, 1 = having ST-T wave abnormality, 2 = showing probable or definite left ventricular hypertrophy by Estes' criteria)<br>
+      <strong>Thalach</strong>: The person's maximum heart rate achieved<br>
+      <strong>Exang</strong>: Exercise induced angina (1 = yes; 0 = no)<br>
+      <strong>Oldpeak</strong>: ST depression induced by exercise relative to rest ('ST' relates to positions on the ECG plot)<br>
+      <strong>slope</strong>: The slope of the peak exercise ST segment (Value 0: upsloping, Value 1: flat, Value 2: downsloping)<br>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<hr>
+   <form  method="POST">
+     <h3 style="color:black; font-family:courier,arial,helvetica;">Fill Up form to check your <strong>HEART</strong> status</h3>
+
+    <div class="row">
+    <div class="col">
+     <div class="form-group">
+        <label for="cholesterol" >Cholesterol</label>
+        <input type="number" class="form-control" id="cholesterol" name="cholesterol" placeholder="126-564" min="126" max="564" required>
+     </div></div>
+
+     <div class="col">
+     <div class="form-group">
+        <label for="thalach" >Thalach</label>
+        <input type="number" class="form-control" id="thalach" name="thalach" placeholder="70-202" min="70" max="202" required>
+     </div></div>
+     </div>
+
+
+     <div class="row">
+     <div class="col">
+     <div class="form-group">
+        <label for="BloodPressure" >BloodPressure</label>
+        <input type="number" class="form-control" id="BloodPressure" name="BloodPressure" placeholder="94-200" min="94" max="200" required>
+     </div></div>
+
+     <div class="col">
+     <div class="form-group">
+        <label for="oldpeak" >Oldpeak</label>
+        <input type="number" class="form-control" id="oldpeak" name="oldpeak" placeholder="0.0-6.2" step="0.1" min="0" max="6.2" required>
+     </div></div>
+     </div>
+
+
+
+     <div class="form-group">
+        <label for="Age" >Age</label>
+        <input type="number" class="form-control" id="Age" name="Age" placeholder=">18" min="18"   required>
+     </div>
+
+
+   <div class="row">
+   <div class="col">
+  <div class="input-group mb-3">
+   <div class="input-group-prepend">
+     <label class="input-group-text" for="sex">Sex</label>
+   </div>
+   <select class="custom-select" id="sex" name="sex" required>
+     <option value="">Choose...</option>
+     <option value="1">Male</option>
+     <option value="0">Female</option>
+   </select>
+ </div></div>
+
+ <div class="col">
+   <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="cp">Chest pain</label>
+    </div>
+    <select class="custom-select" id="cp" name="cp" required>
+      <option value="">Choose...</option>
+      <option value="0">Typical angina</option>
+      <option value="1">Atypical angina</option>
+      <option value="2">Non-Anginal pain</option>
+      <option value="3">Asymptomatic</option>
+    </select>
+  </div>
+  </div>
+
+
+   <div class="col">
+     <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="restecg">Restecg</label>
+      </div>
+      <select class="custom-select" id="restecg" name="restecg" required>
+        <option value="">Choose...</option>
+        <option value="0">Normal</option>
+        <option value="1">Having ST-T wave abnormality</option>
+        <option value="2">Showing probable</option>
+      </select>
+    </div>
+    </div></div>
+
+
+    <div class="row">
+    <div class="col">
+      <div class="input-group mb-3">
+       <div class="input-group-prepend">
+         <label class="input-group-text" for="fbs">Fbs</label>
+       </div>
+       <select class="custom-select" id="fbs" name="fbs" required>
+         <option value="">Choose...</option>
+         <option value="1">True</option>
+         <option value="0">False</option>
+       </select>
+     </div></div>
+
+
+     <div class="col">
+     <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="slope">Slope</label>
+      </div>
+      <select class="custom-select" id="slope" name="slope" required>
+        <option value="">Choose...</option>
+        <option value="0">Upsloping</option>
+        <option value="1">Flat</option>
+        <option value="2">Downsloping</option>
+      </select>
+    </div></div>
+
+
+    <div class="col">
+    <div class="input-group mb-3">
+     <div class="input-group-prepend">
+       <label class="input-group-text" for="exang">Exang</label>
+     </div>
+     <select class="custom-select" id="exang" name="exang" required>
+       <option value="">Choose...</option>
+       <option value="1">Yes</option>
+       <option value="0">No</option>
+     </select>
+   </div></div>
+   </div>
+
+
+
+     <br><br>
+    <input type="submit" class="btn btn-outline-success" name="Submit" value="Submit and Predict">
+
+   </form>
+<br>
+
+
+  {% else %}
+
+      {% if result%}
+      <h2 style="color:#B80515">... Sorry to say! You have symptoms of presence of<span class="badge badge-secondary">heart disease</span>! ...</h2>
+      <hr>
+
+      <p>Here are some tips to improve your health.......</p>
+      <h3>Keeping your heart healthy is something you can work on every day.</h3>
+
+      <p style="font-family:verdana">Healthy eating for a healthy heart is a pattern. It doesn’t focus on one type of food or nutrient, but rather on what you eat over days, weeks and months.<br>
+       This style of eating is naturally low in saturated and trans fats, salt and added sugar. It’s rich in wholegrains, fibre, antioxidants and unsaturated fats.</p>
+
+       <ul>
+         <li>Eat more fruit and vegetables</li>
+         <li>Swap to wholegrain</li>
+         <li>Make healthy fat choices</li>
+         <li>Use herbs and spices instead of salt</li>
+       </ul>
+
+
+       <p style="font-family:verdana">Doing regular physical activity reduces your risk of having a heart attack or developing heart disease.
+          Keeping active helps to control common heart disease risk factors, including: </p>
+        <ul>
+          <li>High blood pressure</li>
+          <li>High cholesterol</li>
+          <li>Being overweight</li>
+          <img src="static/heart.gif" alt="gif" width="35%" height="30%" >
+        </ul>
+
+        <p style="font-family:verdana"><a href="https://www.heartfoundation.org.au/Heart-health-education/Keeping-your-heart-healthy">You can reach here for more info.</a></p>
+
+
+      {% else %}
+      <h2 style="color:#0A8B05">..... Hey Buddy! You are a<span class="badge badge-secondary">heart healthy</span>person! .....</h2>
+      <hr3>
+      <p>Make sure you know about some general symptoms for ....</p>
+
+      <h4>Symptoms of heart disease in your blood vessels (atherosclerotic disease)</h4>
+      <ul>
+        <li>Chest pain, chest tightness, chest pressure and chest discomfort (angina)</li>
+        <li>Shortness of breath</li>
+        <li>Pain, numbness, weakness or coldness in your legs or arms if the blood vessels in those parts of your body are narrowed</li>
+        <li>Pain in the neck, jaw, throat, upper abdomen or back</li>
+      </ul>
+      <h4>Heart disease symptoms caused by abnormal heartbeats (heart arrhythmias)</h4>
+      <ul>
+        <li>Fluttering in your chest, Racing heartbeat (tachycardia), Slow heartbeat (bradycardia)</li>
+        <li>Chest pain or discomfort, Shortness of breath</li>
+        <li>Lightheadedness, Dizziness, Fainting (syncope) or near fainting</li>
+      </ul>
+
+    <h4>Heart disease symptoms caused by weak heart muscle (dilated cardiomyopathy)</h4>
+    <ul>
+      <li>Breathlessness with exertion or at rest</li>
+      <li>Swelling of the legs, ankles and feet</li>
+      <li>Fatigue, Irregular heartbeats that feel rapid, pounding or fluttering</li>
+      <li>Dizziness, lightheadedness and fainting</li>
+    </ul>
+
+    <h4> Be healthy always!....</h4>
+    <img src="static/hr3.gif" alt="gif" width="28%" height="25%">
+
+
+      {% endif %}
+
+
+
+{% endif %}
+
+
+
+</div>
+</div>
+
+</body>
+
+{% endblock%}

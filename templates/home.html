@@ -1,0 +1,92 @@
+{% extends "Base.html" %}
+
+{% block content %}
+
+<body class="dabetes" style="background-image:url('static/bk7.jpg'); background-size: cover; max-width:100%; max-height:80%%; " >
+
+<div class="jumbotron" >
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This web platform is made using <strong>Flask</strong> API. Serving Predictive model at your fingertips.</p>
+  <hr class="my-4">
+  <p>Models are trained for predicting any presence of Diabetes or Heart disease in paitent using various <strong>Machine Learning</strong> techniques.</p>
+  <p class="lead">
+    <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+        About
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">About</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <strong>Purpose:</strong><br>
+          Want to contribute in Medical/Health sector by providing simple, easy to use web api for detecting diabetes and presence of heart disease which can easily practised by a person working in this sector.
+          <br>
+          <strong>Model1:</strong><br>
+          This is a ML oriented Web Application for detection of the diabetes based on the parameters that the user enters.
+          <br>
+          <strong>Model2:</strong><br>
+          This is a ML oriented Web Application for detection of presence of heart disease based on the parameters that the user enters.
+          <br>
+          <strong>Covid page:</strong><br>
+          Page specially design for reminding people to do their duty well. Alse for thanking special people on this earth !
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+        </div>
+        </div>
+</div>
+</div>
+
+<div class="container">
+
+  <div class="card-deck">
+  <div class="card">
+  <img class="card-img-top" src="static/dabetes_ch.jpg" alt="Diabetes.img" width="227" height="200">
+  <div class="card-body">
+  <h5 class="card-title">Check for Diabetes</h5>
+  <p class="card-text"> Hit below to access the <strong>Diabetes Prediction Portal</strong>.</p>
+  <a href= {{ url_for("dabetes") }}  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Check here..</a>
+  </div>
+  </div>
+
+
+  <div class="card">
+  <img class="card-img-top" src="static/heart_ch.jpg" alt="Heart.img" width="227" height="200">
+  <div class="card-body">
+  <h5 class="card-title">Check for Heart disease</h5>
+  <p class="card-text"> Hit below to access the <strong>Heart disease Prediction Portal</strong>.</p>
+  <a href= {{ url_for("heart") }}  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Check here..</a>
+  </div>
+  </div>
+
+
+  <div class="card">
+  <img class="card-img-top" src="static/cv.jpg" alt="Heart.img" width="227" height="200">
+  <div class="card-body">
+  <h5 class="card-title">Covid 19</h5>
+  <p class="card-text">Page specially made  for <strong>acknowledging covid warriors</strong> </p>
+  <a href= {{ url_for("covid") }}  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+  </div>
+  </div>
+
+
+
+  </div>
+
+
+</div>
+
+
+</body>
+
+{% endblock%}
