@@ -1,8 +1,8 @@
 # Diabetes/Heart_disease Dtection web api
 ## Table of Content
-* Demo
+* [Demo](#demo)
 * [Overview](#overview)
-* [Motivation and Purpose](#motivation and Purpose)
+* [Motivation/Purpose](#Motivation/Purpose)
 * [Technical Aspect](#technical-aspect)
 * [Installation](#installation) 
 * [Run](#run)
