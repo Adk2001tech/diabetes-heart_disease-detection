@@ -18,6 +18,8 @@ Link:--> https://quick-health-checkup-api.herokuapp.com
 <br>
 PHOTO
 
+
+![](https://forthebadge.com/images/badges/made-with-python.svg) [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
 ## Overview
 Simple Flask app for Diabetes and Heart patient to monitor/check their health status. <a href="https://www.kaggle.com/akhileshdkapse/starter-guide-eda-acc-87-precision-92">Model1</a> (`diabetes_pima.pkl`) trained over diabetes <a href="https://www.kaggle.com/uciml/pima-indians-diabetes-database">dataset</a> and Model2 (`Heart_model_final.pkl`) is trained over heart disease <a href="https://www.kaggle.com/ronitf/heart-disease-uci">dataset</a>. To make use of this web app you must fill up respected form with valid inputs and boom!!..Model will predict and comment it out with proper guidance/advice about your health results, which will definitely make your health bettter. 
 <br>
@@ -83,5 +85,24 @@ PHOTO(heroku)
 ├── LICENSE
 ├── Procfile
 └──README.md
-
 ```
+
+## Technologies Used
+<img target="_blank" src="https://miro.medium.com/fit/c/1838/551/1*Ab299OETAeuTEiGg5TwpMQ.png" width=400>
+<br><img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=270><img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280><img target="_blank" src="https://kazoo.jp/wpkazoo2019/wp-content/uploads/2018/05/bootstrap4.png" width=270>
+
+## License
+![MIT license](https://img.shields.io/badge/License-MIT-brightgreen)
+<br>
+**Copyright (c) 2020 Akhilesh kapse** <br>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:<br>
+**The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.**
+
+## Credits
+Kaggle 
