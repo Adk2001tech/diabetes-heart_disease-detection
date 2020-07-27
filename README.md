@@ -32,4 +32,5 @@ Simple Flask app for Diabetes and Heart patient to monitor/check their health st
           Page specially design for reminding people to do their duty well. Alse for thanking special people on this earth !
 
 ## Motivation/Purpose
-Want to contribute in Medical/Health sector by providing simple, easy to use web api for detecting diabetes and presence of heart disease which can easily practised by a person working in this sector.
+* **Now in this pandemic situation of covid 19, there is a high risk of getting covid affected if we go out for health check-ups specially in Hospitals serving as a Covid centers. To stop the spread out this virus we have to be in home.** Taking this thought in an account, I have made this small and effective web app which will somehow contribute in making yhe world safe and healthy!  
+* Want to contribute in Medical/Health sector by providing simple, easy to use web api for detecting diabetes and presence of heart disease which can easily practised by a person working in this sector.
