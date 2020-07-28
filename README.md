@@ -4,6 +4,7 @@
 * [Overview](#overview)
 * [Motivation/Purpose](#Motivation/Purpose)
 * [Technical Aspect](#technical-aspect)
+* [Evaluation matrix](#evaluation-matrix)
 * [Installation](#installation) 
 * [Run](#run)
 * [Deployement on Heroku](#deployement-on-heroku)
@@ -16,7 +17,8 @@
 ## Demo
 Link:--> https://quick-health-checkup-api.herokuapp.com
 <br>
-PHOTO
+![pic1](https://user-images.githubusercontent.com/64481847/88671877-7159b400-d104-11ea-97a8-81e8405b9c04.png)
+
 
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg) [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
@@ -42,6 +44,14 @@ This project is divided into Three part:
 1.  Use of machine learning techniques to fit our data and Hypertune model parameters for its better performance.(*Jump to traning model part by clicking on Model1 in Overview section*)
 2. Downloading data and our trained models(`.pkl file formate`) from kaggle kernels and setting up environment to run our app in local machine .
 3. Building and hosting a Flask web app on Heroku(PAAS).
+
+## Evaluation matrix
+* <strong>Since the project aim is to predict the person is healthy or not. The trade off between models accuracy and precision.</strong>
+* <strong>Due to less data, Using ANN for traning giver quite decent performance on matrix.</strong>
+* <strong>Used various ML algorithms to optimize evaluation matrix.</strong>
+* <strong>Model(Random forest algo.) gives **87%** overall accuracy with **93%** of precision.</strong>
+![_Pima_Indian _ Kaggle - Google Chrome 7_23_2020 6_46_40 PM](https://user-images.githubusercontent.com/64481847/88678825-7a4e8380-d10c-11ea-9c9d-e04057860ab8.png)
+
 
 ## Installation
 The Code is written in Python 3.7 in an anaconda environment. For anaconda instalation click <a href="https://www.anaconda.com/products/individual">here</a>.To make new environment in anaconda run following commands in your **Anaconda Prompt**.
