@@ -49,8 +49,9 @@ This project is divided into Three part:
 * <strong>Since the project aim is to predict the person is healthy or not. The trade off between models accuracy and precision.</strong>
 * <strong>Due to less data, Using ANN for traning giver quite decent performance on matrix.</strong>
 * <strong>Used various ML algorithms to optimize evaluation matrix.</strong>
-* <strong>Model(Random forest ML algo.) gives **87%** overall accuracy,with **93%** of precision-in other words, when model predicts a person is unhealthy, it is correct 93% of the time.</strong>
-<br>
+* <strong>Model(Random forest ML algo.) gives **87%** overall accuracy,with **93%** of precision-in other words, when model predicts a person is unhealthy, it is correct 93% of the time.</strong><br>
+
+
 ![_Pima_Indian _ Kaggle - Google Chrome 7_23_2020 6_46_40 PM](https://user-images.githubusercontent.com/64481847/88678825-7a4e8380-d10c-11ea-9c9d-e04057860ab8.png)
 
 
