@@ -15,9 +15,12 @@
 * [Credits](#credits)
 
 ## Demo
-Link:--> https://quick-health-checkup-api.herokuapp.com
-<br>
-![pic1](https://user-images.githubusercontent.com/64481847/88671877-7159b400-d104-11ea-97a8-81e8405b9c04.png)
+Link:--><br>
+https://quick-health-checkup-api.herokuapp.com
+<br><br>
+
+![20200730_134813](https://user-images.githubusercontent.com/64481847/88899511-c5cb7380-d26b-11ea-9a79-f11e39dfad0a.gif)
+
 
 
 
