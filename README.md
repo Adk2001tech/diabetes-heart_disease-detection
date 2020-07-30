@@ -73,7 +73,6 @@ python app.py
 
 ## Deployement on Heroku
 Vist <a href="Deployement on Heroku">here</a> for details.
-PHOTO(heroku)
 
 ## Directory Tree
 ```
