@@ -103,6 +103,7 @@ Vist <a href="Deployement on Heroku">here</a> for details.
 
 ## Technologies Used
 <img target="_blank" src="https://miro.medium.com/fit/c/1838/551/1*Ab299OETAeuTEiGg5TwpMQ.png" width=400>
+<img target="_blank" src="https://softwareengineeringdaily.com/wp-content/uploads/2016/09/scikit-learn-logo.png" width=400>
 <br><img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=270><img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280><img target="_blank" src="https://kazoo.jp/wpkazoo2019/wp-content/uploads/2018/05/bootstrap4.png" width=270>
 
 ## License
