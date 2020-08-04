@@ -105,6 +105,10 @@ Vist <a href="Deployement on Heroku">here</a> for details.
 <img target="_blank" src="https://softwareengineeringdaily.com/wp-content/uploads/2016/09/scikit-learn-logo.png" width=400>
 <br><img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=270><img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280><img target="_blank" src="https://kazoo.jp/wpkazoo2019/wp-content/uploads/2018/05/bootstrap4.png" width=270>
 
+## Team
+
+<a href="https://www.linkedin.com/in/akhilesh-kapse-a8a606195/">Akhilesh Kapse</a>
+
 ## License
 ![MIT license](https://img.shields.io/badge/License-MIT-brightgreen)
 <br>
