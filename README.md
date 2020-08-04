@@ -12,7 +12,6 @@
 * [Technologies Used](#technologies-used)
 * [Team](#team)
 * [License](#license)
-* [Credits](#credits)
 
 ## Demo
 Link:--><br>
@@ -119,5 +118,4 @@ furnished to do so, subject to the following conditions:<br>
 **The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.**
 
-## Credits
-Kaggle 
+
